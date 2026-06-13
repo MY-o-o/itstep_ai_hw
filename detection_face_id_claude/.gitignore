@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+models/
+*.pt
+data/db/
+data/shot_*.jpg
+data/incidents/
+data/reports/
+data/photos/*
+!data/photos/.gitkeep
