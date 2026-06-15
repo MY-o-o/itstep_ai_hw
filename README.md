@@ -1,4 +1,4 @@
-# IT STEP AI Homework
+# HW Landing page
 
 This repository contains the GitHub Profile Portfolio project.
 
