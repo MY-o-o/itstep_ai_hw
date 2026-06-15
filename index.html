@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY-o-o | Developer Portfolio</title>
+  <meta name="description" content="Explore the developer portfolio of MY-o-o. View public projects, programming skills, recent contributions, and coding activity fetched directly from GitHub.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="glow-container">
+    <div class="ambient-glow"></div>
+    <div class="ambient-glow-2"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i data-lucide="terminal"></i> <span>MY</span>.dev
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about"><i data-lucide="user" style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:4px;"></i>About</a></li>
+          <li><a href="#projects"><i data-lucide="code-2" style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:4px;"></i>Projects</a></li>
+          <li><a href="#skills"><i data-lucide="cpu" style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:4px;"></i>Skills</a></li>
+          <li><a href="#activity"><i data-lucide="activity" style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:4px;"></i>Activity</a></li>
+          <li><a href="#contact"><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:4px;"></i>Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Rate Limit API Cache Alert Banner -->
+  <div id="cache-banner" class="cache-banner">
+    <i data-lucide="alert-triangle"></i>
+    <span>GitHub API limit reached. Displaying local cache data.</span>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="greeting" id="hero-greeting">
+          <span class="greeting-wave">👋</span> Hello World, I'm
+        </div>
+        <h1 class="hero-name" id="hero-name">MY-o-o</h1>
+        <p class="hero-bio" id="hero-bio">
+          A passionate software engineer focused on developing responsive web systems and clean C#, Python, and JavaScript code bases. Pulling my profile and repository details directly from GitHub API...
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            View My Projects <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get In Touch <i data-lucide="send"></i>
+          </a>
+        </div>
+        <div class="quick-stats">
+          <div class="stat-item">
+            <span class="stat-value" id="stat-repos">-</span>
+            <span class="stat-label">Repositories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="stat-followers">-</span>
+            <span class="stat-label">Followers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="stat-gists">-</span>
+            <span class="stat-label">Gists</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-pulse-ring"></div>
+        <div class="avatar-image-container">
+          <img id="hero-avatar" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201%201%27%2F%3E" alt="Developer Avatar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Skeleton placeholders will display here until loaded -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="skeleton" style="width: 2.5rem; height: 2.5rem; border-radius: 8px;"></div>
+            <div class="skeleton" style="width: 3rem; height: 1.25rem;"></div>
+          </div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text-short"></div>
+          <div class="project-footer">
+            <div class="skeleton" style="width: 4rem; height: 1rem;"></div>
+            <div class="skeleton" style="width: 5rem; height: 1rem;"></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <div class="skeleton" style="width: 2.5rem; height: 2.5rem; border-radius: 8px;"></div>
+            <div class="skeleton" style="width: 3rem; height: 1.25rem;"></div>
+          </div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text-short"></div>
+          <div class="project-footer">
+            <div class="skeleton" style="width: 4rem; height: 1rem;"></div>
+            <div class="skeleton" style="width: 5rem; height: 1rem;"></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <div class="skeleton" style="width: 2.5rem; height: 2.5rem; border-radius: 8px;"></div>
+            <div class="skeleton" style="width: 3rem; height: 1.25rem;"></div>
+          </div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text-short"></div>
+          <div class="project-footer">
+            <div class="skeleton" style="width: 4rem; height: 1rem;"></div>
+            <div class="skeleton" style="width: 5rem; height: 1rem;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">My Technical <span>Skills</span></h2>
+      <div class="skills-layout">
+        <div class="skills-left">
+          <p class="skills-intro">
+            I specialize in developing robust backend ecosystems and clean user interfaces. Below are my core categories of expertise, alongside a dynamic programming language distribution computed directly from my active GitHub code repositories.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i data-lucide="database"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Backend Development</span>
+                <span class="skill-cat">C#, Python, RESTful API Design</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i data-lucide="layout"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Frontend Architecture</span>
+                <span class="skill-cat">HTML5, Vanilla CSS, JS/ES6</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i data-lucide="layers"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Frameworks & ORMs</span>
+                <span class="skill-cat">WPF, Django, Entity Framework</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i data-lucide="git-branch"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">DevOps & Tooling</span>
+                <span class="skill-cat">Git, Railway Cloud, TOML Configs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="languages-panel">
+          <div class="languages-header">
+            <h3>Language Distribution</h3>
+            <p>Calculated dynamically based on size & composition of my repositories.</p>
+          </div>
+          <div class="language-list" id="language-list">
+            <!-- Languages skeleton loader -->
+            <div class="language-item">
+              <div class="skeleton skeleton-text" style="width: 50%;"></div>
+              <div class="skeleton" style="height: 8px; border-radius: 4px;"></div>
+            </div>
+            <div class="language-item">
+              <div class="skeleton skeleton-text" style="width: 40%;"></div>
+              <div class="skeleton" style="height: 8px; border-radius: 4px;"></div>
+            </div>
+            <div class="language-item">
+              <div class="skeleton skeleton-text" style="width: 60%;"></div>
+              <div class="skeleton" style="height: 8px; border-radius: 4px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Overview Section -->
+  <section class="activity" id="activity">
+    <div class="container activity-layout">
+      <h2 class="section-title">Contribution & <span>Activity</span></h2>
+      
+      <!-- Contribution Graph Panel -->
+      <div class="contributions-panel">
+        <div class="contributions-header">
+          <h3>
+            <i data-lucide="calendar" style="color: var(--accent-primary);"></i>
+            GitHub Contribution Matrix
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">Real-time GitHub activity commits</span>
+        </div>
+        <div class="github-chart-container">
+          <img id="github-chart" src="https://ghchart.rshah.org/38bdf8/MY-o-o" alt="GitHub Contributions Chart">
+        </div>
+      </div>
+
+      <!-- Events Timeline Panel -->
+      <div class="activity-timeline-container">
+        <div class="timeline-panel">
+          <h3>
+            <i data-lucide="git-commit" style="color: var(--accent-primary);"></i>
+            Recent Activity Log
+          </h3>
+          <div class="timeline" id="timeline">
+            <!-- Timeline skeleton loaders -->
+            <div class="timeline-item">
+              <div class="skeleton skeleton-text" style="width: 25%; margin-bottom: 0.5rem;"></div>
+              <div class="skeleton skeleton-title" style="width: 70%; margin-bottom: 0.5rem;"></div>
+              <div class="skeleton skeleton-text-short"></div>
+            </div>
+            <div class="timeline-item">
+              <div class="skeleton skeleton-text" style="width: 20%; margin-bottom: 0.5rem;"></div>
+              <div class="skeleton skeleton-title" style="width: 60%; margin-bottom: 0.5rem;"></div>
+              <div class="skeleton skeleton-text-short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Have a question, an opportunity, or want to collaborate on an interesting project? Feel free to reach out. I will respond as soon as possible!
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:your-email@example.com" class="contact-method-card" id="contact-email">
+              <div class="contact-icon-box">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-method-detail">
+                <h4>Email Me</h4>
+                <p>Send a direct message</p>
+              </div>
+            </a>
+            <a href="https://github.com/MY-o-o" target="_blank" rel="noopener" class="contact-method-card">
+              <div class="contact-icon-box">
+                <i data-lucide="github"></i>
+              </div>
+              <div class="contact-method-detail">
+                <h4>GitHub Profile</h4>
+                <p>github.com/MY-o-o</p>
+              </div>
+            </a>
+            <a href="https://restaurant-booking.up.railway.app/" target="_blank" rel="noopener" class="contact-method-card">
+              <div class="contact-icon-box">
+                <i data-lucide="globe"></i>
+              </div>
+              <div class="contact-method-detail">
+                <h4>Active Deployment</h4>
+                <p>restaurant-booking.up.railway.app</p>
+              </div>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/MY-o-o" class="social-btn" aria-label="GitHub Link"><i data-lucide="github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn Link"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter Link"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Your Message</label>
+              <textarea id="form-message" required placeholder="Hey there, I would love to collaborate on..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%;">
+              Send Message <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 MY-o-o. All rights reserved.</p>
+      <p>Powered by the GitHub Public REST API.</p>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">
+      <i data-lucide="check-circle-2"></i>
+    </div>
+    <div class="toast-content">
+      <h5>Message Sent Successfully!</h5>
+      <p>Thank you for reaching out, I'll be in touch soon.</p>
+    </div>
+  </div>
+
+  <!-- Lucide Icons Library & Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="app.js"></script>
+</body>
+</html>
