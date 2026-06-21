@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Red Delicious",
+    "category": "fresh",
+    "taste": "Sweet & crisp with a classic rich flavour",
+    "uses": "Fresh eating, fruit bowls",
+    "season": "🍂 September – November",
+    "image": "assets/apple_placeholder.png"
+  },
+  {
+    "name": "Golden Gala",
+    "category": "fresh",
+    "taste": "Mildly sweet, honeyed, low acidity",
+    "uses": "Snacking, salads, baking",
+    "season": "☀️ July – September",
+    "image": "assets/apple_placeholder.png"
+  },
+  {
+    "name": "Granny Smith",
+    "category": "export",
+    "taste": "Sharply tart, firm, refreshing",
+    "uses": "Export, pies, pairing with cheese",
+    "season": "❄️ October – January",
+    "image": "assets/apple_placeholder.png"
+  },
+  {
+    "name": "Fuji",
+    "category": "fresh",
+    "taste": "Very sweet, dense, aromatic",
+    "uses": "Fresh market, gift packs",
+    "season": "🍂 October – December",
+    "image": "assets/apple_placeholder.png"
+  },
+  {
+    "name": "Braeburn",
+    "category": "juice",
+    "taste": "Sweet-tart balance, spiced notes",
+    "uses": "Juice blends, cider production",
+    "season": "🍂 October – February",
+    "image": "assets/apple_placeholder.png"
+  },
+  {
+    "name": "Pink Lady",
+    "category": "export",
+    "taste": "Sweet-tart, crisp, effervescent",
+    "uses": "Premium export, retail display",
+    "season": "❄️ November – March",
+    "image": "assets/apple_placeholder.png"
+  }
+]

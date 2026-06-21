@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrchardCraft — From Orchard to Table, Perfection in Every Apple</title>
+  <meta name="description" content="OrchardCraft is a premium apple processing company combining sustainable farming with state-of-the-art technology. We export to 45+ countries with ISO 22000, HACCP, and GlobalGAP certifications." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVIGATION ══════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo-link" aria-label="OrchardCraft Home">
+        <span class="logo-icon">🍎</span>
+        <span class="logo-text">OrchardCraft</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="#process" class="nav-link">Our Process</a></li>
+          <li><a href="#products" class="nav-link">Varieties</a></li>
+          <li><a href="#sustainability" class="nav-link">Sustainability</a></li>
+          <li><a href="#certifications" class="nav-link">Quality</a></li>
+          <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-bg" id="hero-bg" style="background-image: url('assets/hero.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="hero-content">
+      <span class="hero-eyebrow">Family Grown · Industrially Perfected</span>
+      <h1 class="hero-headline">From Orchard to Table —<br><em>Perfection in Every Apple</em></h1>
+      <p class="hero-sub">Sustainable farming traditions, scaled with state-of-the-art processing. We grow the finest apples and deliver them—crisp, safe, and traceable—to tables across the world.</p>
+      <div class="hero-cta-group">
+        <a href="#process" class="btn btn-primary" id="hero-cta-process">Our Process <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline" id="hero-cta-contact">Contact Us</a>
+      </div>
+    </div>
+    <a href="#stats" class="hero-scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ══════════ STATS / TRUST BAR ══════════ -->
+  <section class="stats-section" id="stats" aria-label="Key metrics">
+    <div class="container stats-grid">
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+        <i class="fa-solid fa-tree stat-icon"></i>
+        <span class="stat-number" data-target="1500" id="stat-hectares">0</span>
+        <span class="stat-suffix">ha</span>
+        <span class="stat-label">Hectares of Orchards</span>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-weight-hanging stat-icon"></i>
+        <span class="stat-number" data-target="200000" id="stat-tons">0</span>
+        <span class="stat-suffix">t</span>
+        <span class="stat-label">Tons Processed Annually</span>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-clock-rotate-left stat-icon"></i>
+        <span class="stat-number" data-target="30" id="stat-years">0</span>
+        <span class="stat-suffix">yr</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-globe stat-icon"></i>
+        <span class="stat-number" data-target="45" id="stat-countries">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Countries Exported To</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OUR PROCESS ══════════ -->
+  <section class="process-section" id="process" aria-label="Our process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">How We Work</span>
+        <h2 class="section-title">From Seed to Shelf</h2>
+        <p class="section-sub">Every apple that leaves our facility has passed through four stages of rigorous care—each one a commitment to the quality our partners expect.</p>
+      </div>
+      <div class="process-steps" role="list">
+        <div class="process-step" data-aos="fade-up" data-aos-delay="0" role="listitem">
+          <div class="step-number" aria-hidden="true">01</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-seedling step-icon"></i>
+          </div>
+          <h3 class="step-title">Cultivation</h3>
+          <p class="step-desc">Precision-guided soil management, integrated pest control, and drip irrigation keep our 1,500 hectares thriving without compromising the land.</p>
+          <span class="step-badge"><i class="fa-solid fa-circle-check"></i> Soil-certified</span>
+        </div>
+        <div class="process-connector" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="100" role="listitem">
+          <div class="step-number" aria-hidden="true">02</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-hands-holding step-icon"></i>
+          </div>
+          <h3 class="step-title">Harvesting</h3>
+          <p class="step-desc">Hand-picked at peak Brix levels by our trained seasonal teams. Every apple is handled as if it's the only one—because quality starts at the source.</p>
+          <span class="step-badge"><i class="fa-solid fa-circle-check"></i> Zero-bruise protocol</span>
+        </div>
+        <div class="process-connector" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200" role="listitem">
+          <div class="step-number" aria-hidden="true">03</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-sliders step-icon"></i>
+          </div>
+          <h3 class="step-title">Sorting & Grading</h3>
+          <p class="step-desc">AI-powered optical scanners grade every apple by colour, size, sugar content and surface integrity — 40,000 apples per hour, no compromise.</p>
+          <span class="step-badge"><i class="fa-solid fa-circle-check"></i> AI optical grading</span>
+        </div>
+        <div class="process-connector" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300" role="listitem">
+          <div class="step-number" aria-hidden="true">04</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-box-open step-icon"></i>
+          </div>
+          <h3 class="step-title">Packaging & Delivery</h3>
+          <p class="step-desc">Eco-certified packaging, cold-chain logistics and real-time shipment tracking ensure your apples arrive as fresh as the moment they were picked.</p>
+          <span class="step-badge"><i class="fa-solid fa-circle-check"></i> Cold-chain verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PRODUCT SHOWCASE ══════════ -->
+  <section class="products-section" id="products" aria-label="Apple varieties">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What We Grow</span>
+        <h2 class="section-title">Our Apple Varieties</h2>
+        <p class="section-sub">Six distinct varieties—each selected for its market strength and consumer appeal. Filter by use case to find the right apple for your operation.</p>
+      </div>
+      <div class="filter-tabs" role="tablist" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">All Varieties</button>
+        <button class="filter-btn" data-filter="fresh" id="filter-fresh" role="tab" aria-selected="false">Fresh Market</button>
+        <button class="filter-btn" data-filter="juice" id="filter-juice" role="tab" aria-selected="false">Juice Production</button>
+        <button class="filter-btn" data-filter="export" id="filter-export" role="tab" aria-selected="false">Export Grade</button>
+      </div>
+      <div class="product-grid" id="product-grid" role="list" data-aos="fade-up">
+        <!-- Rendered by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SUSTAINABILITY ══════════ -->
+  <section class="sustainability-section" id="sustainability" aria-label="Sustainability commitments">
+    <div class="container sustainability-layout">
+      <div class="sustainability-text-col" data-aos="fade-right">
+        <span class="section-eyebrow">Our Responsibility</span>
+        <h2 class="section-title">Growing Better,<br>Not Just More</h2>
+        <p class="sustainability-intro">We treat the land as a partner, not a resource. Every decision — from irrigation to packaging — is weighed against its environmental cost.</p>
+        <div class="eco-pillars">
+          <div class="eco-pillar" id="eco-water">
+            <div class="eco-pillar-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="eco-pillar-body">
+              <h4>Water Recycling</h4>
+              <p>95% of our processing water is captured, filtered, and returned to the orchards — a closed loop that conserves over 2 million litres annually.</p>
+            </div>
+          </div>
+          <div class="eco-pillar" id="eco-solar">
+            <div class="eco-pillar-icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <div class="eco-pillar-body">
+              <h4>Solar Energy</h4>
+              <p>Our 18,000m² rooftop solar array covers 80% of our facility's energy needs, cutting 4,200 tonnes of CO₂ per year.</p>
+            </div>
+          </div>
+          <div class="eco-pillar" id="eco-waste">
+            <div class="eco-pillar-icon"><i class="fa-solid fa-recycle"></i></div>
+            <div class="eco-pillar-body">
+              <h4>Zero-Waste Policy</h4>
+              <p>Apple pomace becomes organic fertiliser. Packaging scraps are collected and recycled. We target zero landfill output by 2027.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sustainability-timeline-col" data-aos="fade-left">
+        <div class="eco-timeline">
+          <div class="eco-timeline-item active" id="tl-2015">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2015</span>
+              <h4>Solar installation begins</h4>
+              <p>Phase one of our renewable energy investment — 6,000m² of rooftop panels.</p>
+            </div>
+          </div>
+          <div class="eco-timeline-item" id="tl-2018">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2018</span>
+              <h4>Water recycling system live</h4>
+              <p>Closed-loop water treatment plant operational. 95% reuse rate achieved within 12 months.</p>
+            </div>
+          </div>
+          <div class="eco-timeline-item" id="tl-2021">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2021</span>
+              <h4>Zero-waste commitment signed</h4>
+              <p>Pomace-to-compost programme launched. Landfill output reduced by 78% in year one.</p>
+            </div>
+          </div>
+          <div class="eco-timeline-item" id="tl-2024">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2024</span>
+              <h4>Full solar expansion complete</h4>
+              <p>Facility now generates 110% of daytime energy needs. Surplus feeds back to the national grid.</p>
+            </div>
+          </div>
+          <div class="eco-timeline-item future" id="tl-2027">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2027</span>
+              <h4>Zero landfill target</h4>
+              <p>Final milestone: complete elimination of landfill waste from all operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CERTIFICATIONS ══════════ -->
+  <section class="certifications-section" id="certifications" aria-label="Certifications and quality">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Independently Verified</span>
+        <h2 class="section-title">Quality You Can Prove</h2>
+        <p class="section-sub">Our standards aren't just claimed — they're audited. Every certification on our wall represents a rigorous third-party review of our processes.</p>
+      </div>
+      <div class="cert-badges-row" data-aos="fade-up">
+        <div class="cert-badge" id="cert-iso" data-label="ISO 22000" data-desc="International food safety management — covers the entire supply chain from field to fork.">
+          <div class="cert-badge-inner">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span class="cert-name">ISO 22000</span>
+          </div>
+        </div>
+        <div class="cert-badge" id="cert-haccp" data-label="HACCP" data-desc="Hazard Analysis Critical Control Points — systematic prevention of food safety hazards.">
+          <div class="cert-badge-inner">
+            <i class="fa-solid fa-microscope"></i>
+            <span class="cert-name">HACCP</span>
+          </div>
+        </div>
+        <div class="cert-badge" id="cert-gap" data-label="GlobalGAP" data-desc="Good Agricultural Practices standard accepted by retailers in 135+ countries.">
+          <div class="cert-badge-inner">
+            <i class="fa-solid fa-earth-europe"></i>
+            <span class="cert-name">GlobalGAP</span>
+          </div>
+        </div>
+        <div class="cert-badge" id="cert-organic" data-label="Organic Certified" data-desc="EU Organic certification — no synthetic pesticides, no GMOs, verified soil health.">
+          <div class="cert-badge-inner">
+            <i class="fa-solid fa-leaf"></i>
+            <span class="cert-name">Organic Certified</span>
+          </div>
+        </div>
+      </div>
+      <div class="cert-detail-box" id="cert-detail-box" aria-live="polite">
+        <p id="cert-detail-text">Hover over a badge to learn what each certification means for your supply chain.</p>
+      </div>
+      <blockquote class="quality-guarantee" data-aos="fade-up">
+        <i class="fa-solid fa-quote-left"></i>
+        Every apple that carries our name is fully traceable — from the tree it grew on, to the moment it reaches you. That is our guarantee to every partner and every consumer.
+        <cite>— Andriy Kovalenko, Head of Quality Assurance</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS / PARTNERS ══════════ -->
+  <section class="testimonials-section" id="testimonials" aria-label="Partner testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Trusted Worldwide</span>
+        <h2 class="section-title">What Our Partners Say</h2>
+      </div>
+      <div class="testimonials-grid" data-aos="fade-up">
+        <div class="testimonial-card" id="test-card-1">
+          <div class="testimonial-stars" aria-label="5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>"Consistently crisp, perfectly graded apples. Our return rate dropped to near-zero the season we switched to OrchardCraft. A true quality partner."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true" style="background: #D32F2F;">FK</div>
+            <div>
+              <strong>Filip Kovač</strong>
+              <span>Category Director, FreshMart Central Europe</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured" id="test-card-2">
+          <div class="testimonial-stars" aria-label="5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>"Their Braeburn and Granny Smith blends give our premium juice line a flavour profile no other supplier can match. The consistency harvest-to-harvest is remarkable."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true" style="background: #4CAF50;">SW</div>
+            <div>
+              <strong>Sophie Weiss</strong>
+              <span>Head of Procurement, JuiceWorld GmbH</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test-card-3">
+          <div class="testimonial-stars" aria-label="5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>"Full HACCP and GlobalGAP documentation, responsive logistics team, and a track record we can show to our own EU retail customers with confidence."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true" style="background: #8D6E63;">MB</div>
+            <div>
+              <strong>Marco Brunetti</strong>
+              <span>Export Manager, EuroFruits GmbH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partner-logos-row" data-aos="fade-up">
+        <span class="partner-logo-label">Trusted by</span>
+        <div class="partner-logos" id="partner-logos">
+          <div class="partner-logo-item">FreshMart</div>
+          <div class="partner-logo-item">JuiceWorld</div>
+          <div class="partner-logo-item">EuroFruits</div>
+          <div class="partner-logo-item">GreenChain</div>
+          <div class="partner-logo-item">NaturaPack</div>
+          <div class="partner-logo-item">AgroExport</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT / FOOTER ══════════ -->
+  <footer class="footer-section" id="contact" aria-label="Contact and footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-contact-col" data-aos="fade-up">
+        <h3 class="footer-col-title">Send Us a Message</h3>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Ivan Petrenko" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" placeholder="ivan@company.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contact-type">Enquiry Type</label>
+            <select id="contact-type" name="type">
+              <option value="general">General Enquiry</option>
+              <option value="export">Export Partnership</option>
+              <option value="quality">Quality & Certifications</option>
+              <option value="logistics">Logistics & Delivery</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your volume requirements, target markets, or any questions..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check"></i> Thanks! We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-col footer-info-col">
+        <div class="footer-brand" data-aos="fade-up">
+          <span class="logo-icon">🍎</span>
+          <span class="logo-text">OrchardCraft</span>
+        </div>
+        <p class="footer-tagline" data-aos="fade-up">Family roots. Industrial precision. Global reach.</p>
+
+        <div class="footer-details" data-aos="fade-up">
+          <div class="footer-detail-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Sadova Street 1, Vinnytsia Oblast, Ukraine 23600</span>
+          </div>
+          <div class="footer-detail-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+380 (43) 256-7890</span>
+          </div>
+          <div class="footer-detail-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>export@orchardcraft.ua</span>
+          </div>
+        </div>
+
+        <div class="footer-newsletter" data-aos="fade-up">
+          <h4>Harvest Updates</h4>
+          <p>Season forecasts, availability windows, and new variety announcements — straight to your inbox.</p>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <input type="email" id="newsletter-email" name="newsletter" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" id="newsletter-submit">Subscribe</button>
+          </form>
+          <div class="form-success" id="newsletter-success" role="alert" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check"></i> You're subscribed!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 OrchardCraft. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
