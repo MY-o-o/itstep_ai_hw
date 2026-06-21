@@ -1196,3 +1196,120 @@ section { padding-block: 96px; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   .hero-bg { transition: none; }
 }
+/* Design refresh overrides */
+body {
+  background:
+    radial-gradient(circle at top, rgba(198, 40, 40, 0.08), transparent 26%),
+    radial-gradient(circle at 85% 12%, rgba(56, 142, 60, 0.10), transparent 24%),
+    var(--cream);
+}
+
+.site-header {
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  min-height: 100svh;
+}
+
+.hero-content {
+  max-width: 860px;
+}
+
+.hero-headline {
+  text-wrap: balance;
+}
+
+.hero-sub {
+  max-width: 640px;
+}
+
+.section-header {
+  margin-bottom: 48px;
+}
+
+.process-step,
+.cert-badge-inner,
+.testimonial-card,
+.product-card,
+.footer-newsletter,
+.contact-form .btn-primary {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product-card-img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: linear-gradient(135deg, rgba(198,40,40,0.12), rgba(56,142,60,0.12));
+}
+
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out), filter 0.5s var(--ease-out);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.product-card:hover .product-card-img {
+  transform: scale(1.05);
+}
+
+.cert-badge-art {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cert-badge-inner {
+  min-height: 190px;
+}
+
+.partner-logos {
+  gap: 18px;
+}
+
+.partner-logo-item {
+  width: 156px;
+  height: 72px;
+  object-fit: contain;
+  padding: 16px 20px;
+  background: #fff;
+  border-radius: var(--radius-md);
+}
+
+.footer-brand .logo-icon,
+.logo .logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--red), var(--green));
+  color: #fff;
+  font-size: 1rem;
+}
+
+.quality-guarantee {
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-form .btn-primary,
+.newsletter-form button {
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+  .partner-logo-item {
+    width: 132px;
+    height: 64px;
+  }
+
+  .cert-badge-inner {
+    min-height: 170px;
+  }
+}
