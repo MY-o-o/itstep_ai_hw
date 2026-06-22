@@ -153,14 +153,32 @@ class DetectionPanel(QScrollArea):
         self.conf_slider.valueChanged.connect(lambda v: self.conf_changed.emit(v / 100.0))
 
         self.only_people = QCheckBox("Лише люди (клас person)")
-        self.only_people.toggled.connect(
-            lambda on: self.classes_changed.emit([0] if on else None))
+        self.only_phone = QCheckBox(f"Лише телефони (клас cell phone)")
+
+        # mutual exclusion: checking one unchecks the other
+        def _on_people(on: bool) -> None:
+            if on:
+                self.only_phone.blockSignals(True)
+                self.only_phone.setChecked(False)
+                self.only_phone.blockSignals(False)
+            self.classes_changed.emit([0] if on else None)
+
+        def _on_phone(on: bool) -> None:
+            if on:
+                self.only_people.blockSignals(True)
+                self.only_people.setChecked(False)
+                self.only_people.blockSignals(False)
+            self.classes_changed.emit([config.PHONE_CLASS_ID] if on else None)
+
+        self.only_people.toggled.connect(_on_people)
+        self.only_phone.toggled.connect(_on_phone)
 
         self.conf_bar = QProgressBar()
         self.conf_bar.setRange(0, 100)
         self.conf_bar.setTextVisible(False)
         col.addWidget(_card_with(_header("Інструменти детекції"),
-                                 self.conf_lbl, self.conf_slider, self.only_people,
+                                 self.conf_lbl, self.conf_slider,
+                                 self.only_people, self.only_phone,
                                  _caption("Середня впевненість кадру"), self.conf_bar))
 
         # --- графіки ---
@@ -185,7 +203,11 @@ class DetectionPanel(QScrollArea):
         return self.conf_slider.value() / 100.0
 
     def classes_value(self):
-        return [0] if self.only_people.isChecked() else None
+        if self.only_people.isChecked():
+            return [0]
+        if self.only_phone.isChecked():
+            return [config.PHONE_CLASS_ID]
+        return None
 
     def update_stats(self, s: dict) -> None:
         self.kpi_fps.set_value(f"{s['fps']:.1f}")

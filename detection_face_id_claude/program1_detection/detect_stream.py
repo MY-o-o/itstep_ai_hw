@@ -29,16 +29,31 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--conf", type=float, default=config.CONF, help="Поріг впевненості")
     p.add_argument("--classes", type=int, nargs="*", default=None,
                    help="Фільтр класів COCO за id (напр. 0 — лише люди)")
+    p.add_argument("--phone", action="store_true",
+                   help=f"Детектувати лише телефони (COCO class {config.PHONE_CLASS_ID} = cell phone)")
     return p.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+
+    # --phone overrides --classes; both are optional
+    if args.phone:
+        active_classes = [config.PHONE_CLASS_ID]
+        mode_label = "Режим: тільки телефони (cell phone)"
+    elif args.classes:
+        active_classes = args.classes
+        mode_label = f"Класи: {args.classes}"
+    else:
+        active_classes = None
+        mode_label = "Режим: всі об'єкти"
+
     print(f"Завантаження моделі {args.model} ...")
     detector = ObjectDetector(args.model, conf=args.conf)
 
     cap = open_camera(args.camera, config.FRAME_WIDTH, config.FRAME_HEIGHT)
     fps = FPSMeter()
+    print(f"{mode_label}")
     print("Запущено. 'q' — вихід, 's' — скріншот.")
 
     try:
@@ -48,13 +63,13 @@ def main() -> None:
                 print("Порожній кадр — камера недоступна?")
                 break
 
-            detections = detector.detect(frame, classes=args.classes)
+            detections = detector.detect(frame, classes=active_classes)
             for d in detections:
                 draw_detection(frame, d.xyxy, f"{d.name} {d.conf:.2f}", COLOR_OBJECT)
 
             fps.tick()
             draw_hud(frame, [f"FPS: {fps.fps:4.1f}", f"Об'єктів: {len(detections)}",
-                             "q-вихід  s-скрін"])
+                             mode_label, "q-вихід  s-скрін"])
             cv2.imshow("Програма 1 — детекція об'єктів", frame)
 
             key = cv2.waitKey(1) & 0xFF

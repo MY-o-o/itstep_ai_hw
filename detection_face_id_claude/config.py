@@ -20,6 +20,7 @@ FRAME_HEIGHT = 720
 YOLO_MODEL = "yolo11n.pt"                 # nano — швидко на CPU; ваги тягнуться при 1-му запуску
 YOLO_IMGSZ = 512                          # менший вхід → швидше (бокси все одно в координатах кадру)
 CONF = 0.4                                # поріг впевненості детекції
+PHONE_CLASS_ID = 67                       # COCO class 67 = "cell phone"
 
 # --- Обличчя (InsightFace ArcFace) ---
 FACE_MODEL = "buffalo_l"
