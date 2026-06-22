@@ -1,4 +1,4 @@
-# AI Image Generation Homework
+# AI Image Generation
 
 A small project comparing text-to-image results for the same character prompt across local Stable Diffusion models and cloud AI tools.
 
