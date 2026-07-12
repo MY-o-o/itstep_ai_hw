@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "portfolio-landing": {
+      "source": "local",
+      "sourceType": "workspace",
+      "skillPath": ".agents/skills/portfolio-landing/SKILL.md",
+      "computedHash": ""
+    }
+  }
+}
