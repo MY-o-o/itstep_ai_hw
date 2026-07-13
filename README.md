@@ -1,1 +1,1 @@
-# Select the HW in branches
+# Check the proof-screenshot.png
